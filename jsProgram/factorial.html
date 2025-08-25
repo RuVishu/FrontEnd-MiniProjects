@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script>
+      function largest()
+      {
+        var num1, factorial;
+        num1 = Number(document.getElementById("N").value);
+        factorial = 1;
+        for(i=1;i<=num1;i++)
+	{
+             factorial = factorial * i
+        }
+	window.alert(num1+"'s factorial is "+ factorial);
+	//document.write(num1+"'s factorial is "+ factorial);
+      }
+    </script>
+  </head>
+  <body align='center' style='background-color:mistyrose'>
+    <h1 align='center' style='color:rebeccapurple'> Calculate factorial</h1>
+    <br>
+    Enter a number : <input type="text" id="N"></input><br> <br>
+    <center><button onclick="largest()">OK</button>
+  </body>
+</html>
